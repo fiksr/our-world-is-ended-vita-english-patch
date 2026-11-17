@@ -20,7 +20,19 @@ Ports the official English localization from the PC (Steam) release of **Our Wor
 - **Vita3K `OP.mp4` Video Crash:** Vita3K's stubbed `SceAvPlayer` / `libscemp4` decoder can crash (`EXCEPTION_ACCESS_VIOLATION`) when playing `OP.mp4` (an untouched original video). Skip `OP.mp4` immediately or load the autosave (`data0098.bin`) in Vita3K; real PS Vita hardware decodes `OP.mp4` natively.
 - **Real PS Vita Hardware:** Tested on Vita3K so far; real hardware testing via `rePatch` (`ux0:rePatch/PCSG01076/Media/...`) is still needed.
 
-## How to Build the Patch
+## Installation (Copy-Paste `rePatch` — Recommended)
+
+Download either zip from the **[Releases](https://github.com/fiksr/our-world-is-ended-vita-english-patch/releases)** page:
+- **`OWIE_Vita_English_Patch_v0.1_rePatch_Full.zip` (`185.5 MB`):** Everything translated, including the 27 English chapter & ending title cards (`EpTitle`).
+- **`OWIE_Vita_English_Patch_v0.1_rePatch_Lite.zip` (`13.0 MB`):** Everything translated *except* the 27 chapter/ending title cards (those stay Japanese).
+
+Then extract and copy the `PCSG01076` folder:
+- **Real PS Vita (`rePatch`):** Copy `PCSG01076` into `ux0:rePatch/` (requires the `rePatch` plugin).
+- **Vita3K:** Copy `PCSG01076` into `ux0/app/` and overwrite existing files.
+
+---
+
+## How to Build the Patch From Source
 
 ### Requirements
 - Decrypted Japanese PS Vita copy of **Our World Is Ended (`PCSG01076`)**

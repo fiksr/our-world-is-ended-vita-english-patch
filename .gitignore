@@ -1,5 +1,6 @@
 backup/
 ui_inspect/
+release/
 __pycache__/
 *.assets
 *.resS
