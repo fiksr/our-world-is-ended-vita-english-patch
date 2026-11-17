@@ -1,0 +1,9 @@
+backup/
+ui_inspect/
+__pycache__/
+*.assets
+*.resS
+*.dat
+*.png
+*.jpg
+*.zip
